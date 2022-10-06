@@ -1,0 +1,140 @@
+body{
+    /* display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: space-between; */
+    height: 100vh;
+    overflow: hidden;
+    font-family: 'Roboto', sans-serif;
+
+    background: #cdd7d6;
+}
+
+body {
+	background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+    /* background: linear-gradient(-45deg, #313a44, #1d1e1f, #505f68, #5e5e5e); */
+	background-size: 400% 400%;
+	animation: gradient 120s ease infinite;
+	height: 100vh;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+.title {
+    margin: auto;
+    margin-top: 2rem;
+    max-width: fit-content;
+    text-align: center;
+}
+
+.title h1 {
+    font-size: 48px;
+    border-bottom: 3px solid black;
+    border-radius: 5px;
+}
+
+.title p {
+    font-size: 20px;
+}
+
+.container {
+    /* width: 25%; */
+    display: flex;
+    flex-direction: column;
+    max-width: 28em;
+    /* min-width: 10em; */
+    height: fit-content;
+    min-height: fit-content;
+
+    margin: auto;
+    margin-top: 2em;
+
+    padding: 1.2em;
+
+    border: solid #102542;
+    border-width: 2px;
+    border-radius: 12px;
+
+    background-color: white;
+}
+
+.form_group {
+    /* position: relative; */
+    display: inline-flex;
+    width: 100%;
+    justify-content: center;
+    align-content: center;
+    border: 2px solid #0d6baa;
+    border-radius: 10px;
+}
+
+.form_group .input{
+    display: block;
+    width: 90%;
+    /* line-height: 15px; */
+    font-size: 16px;
+    padding: 0.5rem;
+    border-radius: 6px 0px 0px 6px;
+}
+
+.form_group button {
+    padding: 0.9rem;
+    border: none;
+    background-color: #85B1CE;
+    border-radius: 0px 6px 6px 0px;
+    text-align: center;
+    font-size: 14px;
+    font-weight: bold;
+    text-decoration: none;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.form_group button:active {
+    background-color: #3a5364;
+}
+
+.form_group:focus-within {
+    border-style: #2b73a3;
+}
+
+.image_result {
+    margin-top: 2rem;
+    border-radius: 15px;
+}
+
+.about {
+    margin: auto;
+    margin-bottom: 2rem;
+
+    padding: .9rem;
+
+    max-width: 29em;
+    /* min-width: 10em; */
+
+    background-color: white;
+
+    border-radius: 6px;
+
+    text-align: center;
+    line-height: 25px;
+}
+
+body hr {
+    max-width: 30em;
+    /* min-width: 33%; */
+    color: black;
+
+    border-style: solid;
+    border-radius: 6px;
+}

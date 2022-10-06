@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>QR Everything</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    </head>
+    <body>
+        <div class="title">
+            <h1>QR Everything!</h1>
+            <p>For all your QR needs!</p>
+        </div>
+        <div class="container">
+            <form action="{{ url_for("quickQR") }}" method="POST" class="form">
+                <div class="form_group">
+                        <input type="text" class="input" id="data" name="data" placeholder="Insert data here..."/>
+                        <button type="submit" id="gen">Generate QR Code</button>
+                </div>
+            </form>
+            {% block content %}
+            {% endblock %}
+        </div>
+        <hr>
+        <div class="about">
+            About this project: <br>
+            <span>
+                This website was created using Python and  Flask to generate the QR code, and to develop the website.
+            </span>
+        </div>
+    </body>
+</html>
